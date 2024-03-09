@@ -16,6 +16,6 @@
     "strict": true,                                      /* Enable all strict type-checking options. */
     "skipLibCheck": true,
   },
-  "include": ["src", "src/**/*"],
+  "include": ["src/*", "src/**/*"],
   "exclude": ["node_modules", "dist"],
 }
