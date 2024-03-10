@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"types": ["@types/node"],
+		"noEmit": true,
+		"allowJs": true
+	},
+	"extends": "./tsconfig.json",
+	"include": ["src", ".eslintrc.js", "config/*", "commitlint.config.js", "public/*.html"],
+	"exclude": ["node_modules", "public/**/*.html"]
+}

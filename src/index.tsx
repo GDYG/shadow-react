@@ -1,25 +1,21 @@
-import React, { useState, useEffect, useRef, PropsWithChildren } from "react";
-import { createPortal } from "react-dom";
+import React, { useState, useEffect, useRef, PropsWithChildren } from 'react'
+import { createPortal } from 'react-dom'
 
 const ShadowDOMComponent = ({ children }: PropsWithChildren) => {
-  const { shadowRootRef, root } = useShadowDOM();
+  const { shadowRootRef, root } = useShadowDOM()
 
-  return (
-    <div ref={shadowRootRef}>
-      {root && <ShadowContent root={root}>{children}</ShadowContent>}
-    </div>
-  );
-};
+  return <div ref={shadowRootRef}>{root && <ShadowContent root={root}>{children}</ShadowContent>}</div>
+}
 
 const useShadowDOM = () => {
-  const containerRef = useRef(null);
-  const [root, setRoot] = useState(null);
+  const containerRef = useRef(null)
+  const [root, setRoot] = useState(null)
 
   useEffect(() => {
     if (containerRef.current) {
       const shadowRoot = (containerRef.current as any).attachShadow({
-        mode: "open",
-      });
+        mode: 'open',
+      })
 
       // 创建并插入样式
       // const styleElement = document.createElement("style");
@@ -31,15 +27,15 @@ const useShadowDOM = () => {
       // linkElem.setAttribute('href', 'https://cdn.tailwindcss.com');
       // shadowRoot.appendChild(linkElem);
 
-      setRoot(shadowRoot);
+      setRoot(shadowRoot)
     }
-  }, []);
+  }, [])
 
-  return { shadowRootRef: containerRef, root };
-};
-
-function ShadowContent({ root, children }: PropsWithChildren<{ root: any }>) {
-  return createPortal(children, root);
+  return { shadowRootRef: containerRef, root }
 }
 
-export default ShadowDOMComponent;
+function ShadowContent({ root, children }: PropsWithChildren<{ root: any }>) {
+  return createPortal(children, root)
+}
+
+export default ShadowDOMComponent

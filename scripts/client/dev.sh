@@ -8,6 +8,6 @@ echo "ENVIRONMENT: $ENVIRONMENT"
 cross-env \
   ENVIRONMENT=$ENVIRONMENT \
   PORT=$PORT \
-  webpack \
+  webpack serve \
   --mode development \
   --config config/webpack.development.js \
