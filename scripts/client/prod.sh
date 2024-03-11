@@ -7,7 +7,6 @@ echo "ENVIRONMENT: $ENVIRONMENT"
 
 cross-env \
   ENVIRONMENT=$ENVIRONMENT \
-  PORT=$PORT \
   webpack \
   --mode production \
   --config config/webpack.production.js \

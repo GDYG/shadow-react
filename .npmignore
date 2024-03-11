@@ -11,7 +11,7 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-src/
+dist/
 public/
 env/
 scripts/

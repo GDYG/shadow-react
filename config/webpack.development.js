@@ -2,6 +2,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const FriendlyErrorsWebpackPlugin = require('@soda/friendly-errors-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.config.js')
 const notifier = require('node-notifier')
@@ -90,10 +91,6 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: 'index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'assets/styles/[name].css',
-      chunkFilename: 'assets/styles/[id].css',
     }),
   ],
 })

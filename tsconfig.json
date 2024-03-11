@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
-    "target": "esnext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "target": "es5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
+    // "outDir": "dist/esm",
+    // "sourceMap": true,
+    // "declaration": true,
+    // "skipLibCheck": true,
     "allowJs": true,
     "jsx": "preserve" /* Specify what JSX code is generated. */,
     "module": "esnext" /* Specify what module code is generated. */,

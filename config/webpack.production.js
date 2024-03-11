@@ -4,12 +4,16 @@ const common = require('./webpack.config.js')
 
 module.exports = merge(common, {
   mode: 'production',
-  entry: path.resolve(__dirname, '../src/index.tsx'),
+  devtool: 'source-map',
+  entry: {
+    index: path.resolve(__dirname, '../src/index.tsx'),
+    'index.min': path.resolve(__dirname, '../src/index.tsx'),
+  },
   output: {
-    path: path.resolve(process.cwd(), 'dist/lib'),
-    filename: 'index.js',
-    // publicPath: '/',
-    // chunkFilename: "scripts/[name].[hash:5].js",
-    // assetModuleFilename: "images/[name].[hash:5][ext]",
+    path: path.resolve(process.cwd(), 'dist/umd'),
+    filename: '[name].js',
+    libraryTarget: 'umd',
+    library: 'shadow-react-dom',
+    umdNamedDefine: true,
   },
 })

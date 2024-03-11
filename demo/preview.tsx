@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
-import ShadowDOMComponent from '../src/index'
+// @ts-ignore
+import { ShadowDOMComponent } from 'shadow-react-dom'
 import './main.css'
 import './utils/dynamicFontSize'
 

@@ -4901,6 +4901,25 @@ setprototypeof@1.2.0:
   resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
+shadow-react-dom@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/shadow-react-dom/-/shadow-react-dom-0.0.1.tgz#8227216fac31fd71f24838ec46c7619cb4035be8"
+  integrity sha512-E1QhmV5INOhlQ+jGD9HbCN+p5pb3iIXaMleliNLCck1wiyUCOeBn67/8WVhRqBQVeWNXay8A/B7NlbfObnTpWQ==
+
+shadow-react-dom@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/shadow-react-dom/-/shadow-react-dom-0.0.2.tgz#e3953dbd4170bd4b859eab1b3818881e20629aae"
+  integrity sha512-+jsRmKuwoqRCAxe6RD1NnMNHAP2FzP8DPA3iJ+XxsbVGHpKkhvmbzHkICWEEGedTvw5FOQtziGN7wEGzwZIrOg==
+  dependencies:
+    shadow-react-dom "^0.0.1"
+
+shadow-react-dom@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/shadow-react-dom/-/shadow-react-dom-0.0.3.tgz#9fb69afa48aa537380c9ac9185efbe0c6e486fef"
+  integrity sha512-3eW/OAZb7ep2gJMbXXZSDUfYjSj8mvScBPg0gf+neqDdLMdWS0rA1rVBgYOdZobehJFweA9Kjm6//JMC0w2Sag==
+  dependencies:
+    shadow-react-dom "^0.0.2"
+
 shallow-clone@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
