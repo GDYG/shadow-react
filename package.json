@@ -1,5 +1,5 @@
 {
-  "name": "shadow-react",
+  "name": "shadow-react-dom",
   "version": "1.0.0",
   "main": "./dist/lib/index.js",
   "repository": "git@github.com:GDYG/shadow-react.git",

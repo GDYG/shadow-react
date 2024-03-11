@@ -1,12 +1,12 @@
-# shadow-react
+# shadow-react-dom
 
 shadow DOM for react
 
 # Installation
 
 ```bash
-npm install --save shadow-react
-yarn add shadow-react --save
+npm install --save shadow-react-dom
+yarn add shadow-react-dom --save
 ```
 
 # Examples
@@ -17,7 +17,7 @@ yarn add shadow-react --save
   
 ```tsx
   import { createRoot } from 'react-dom/client'
-  import ShadowDOMComponent from 'shadow-react'
+  import ShadowDOMComponent from 'shadow-react-dom'
 
   function App() {
     const style = `p {
