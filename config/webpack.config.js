@@ -54,14 +54,6 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new Dotenv({ path: path.resolve('env', '.dev.env') }),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'assets/styles/[name].css',
-      chunkFilename: 'assets/styles/[id].css',
-    }),
     // new CopyWebpackPlugin({
     //   patterns: [
     //     {

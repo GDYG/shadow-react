@@ -30,7 +30,7 @@ module.exports = merge(common, {
     type: 'filesystem',
     allowCollectingMemory: true,
   },
-  entry: path.resolve(__dirname, '../src/test.tsx'),
+  entry: path.resolve(__dirname, '../demo/preview.tsx'),
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
@@ -87,5 +87,13 @@ module.exports = merge(common, {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.SourceMapDevToolPlugin({ exclude: '/node_modules/*' }),
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: 'index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'assets/styles/[name].css',
+      chunkFilename: 'assets/styles/[id].css',
+    }),
   ],
 })

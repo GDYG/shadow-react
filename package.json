@@ -1,12 +1,15 @@
 {
   "name": "shadow-react",
   "version": "1.0.0",
-  "main": "./src/index.tsx",
+  "main": "./dist/lib/index.js",
   "repository": "git@github.com:GDYG/shadow-react.git",
   "author": "GDYG",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "yarn client:dev",
+    "preview": "yarn client:dev",
     "build": "yarn client:prod",
     "client:dev": "scripty",
     "client:prod": "scripty",
