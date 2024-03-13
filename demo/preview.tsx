@@ -1,8 +1,7 @@
 import { createRoot } from 'react-dom/client'
-// @ts-ignore
-import { ShadowDOMComponent } from 'shadow-react-dom'
 import './main.css'
 import './utils/dynamicFontSize'
+import { ShadowDOMComponent } from 'shadow-react-dom'
 
 function App() {
   const style = `p {
@@ -15,15 +14,14 @@ function App() {
       color: #f00;
   }
   `
-
   return (
     <main>
       <h1 className="text-[40px]">全局样式+TailwindCSS</h1>
       <p>全局样式</p>
       <ShadowDOMComponent>
         <style>{style}</style>
-        <h1>隔离样式h1</h1>
-        <p>隔离样式p</p>
+        <h1>隔离样式 - h1</h1>
+        <p>隔离样式 - p</p>
       </ShadowDOMComponent>
     </main>
   )

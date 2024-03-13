@@ -15,12 +15,24 @@ module.exports = {
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
+    // 'react-dom': {
+    //   commonjs: 'react-dom',
+    //   commonjs2: 'react-dom',
+    //   amd: 'react-dom',
+    //   root: 'ReactDOM',
+    // },
+    // react: {
+    //   commonjs: 'react',
+    //   commonjs2: 'react',
+    //   amd: 'react',
+    //   root: 'React',
+    // },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        // exclude: /node_modules/,
+        // exclude: /node_modules\/(?!shadow-react-dom\/).*/,
         use: {
           loader: 'swc-loader',
         },

@@ -41,7 +41,7 @@ module.exports = merge(common, {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, '..', 'dist'),
+      directory: path.join(__dirname, '..', 'public'),
     },
     hot: true,
     // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions, @typescript-eslint/prefer-nullish-coalescing

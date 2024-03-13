@@ -1,6 +1,6 @@
 {
 	"module": {
-		"type": "es6",
+		"type": "umd",
 		"resolveFully": true
 	},
 	"jsc": {
@@ -21,6 +21,19 @@
 		},
 		"target": "es5",
 		"loose": false,
-		"keepClassNames": false
+		"keepClassNames": false,
+		// "minify": { // 压缩相关
+    //   "compress": true, // 对应 terser 的压缩选项
+    //   "mangle": true // 对应 terser 的处理选项
+    // }
 	}
+	// "env": { // 浏览器兼容，类似 babel 中的 presets env
+  //   "targets": {
+  //     "chrome": "79"
+  //   },
+  //   "coreJs": "3.29.1" // 使用的 corejs 版本
+  //   // "include": [], // 要包含的功能或模块
+  //   // "exclude": [], // 要排除的功能或模块
+  // },
+  // "minify": true // 开启压缩
 }
