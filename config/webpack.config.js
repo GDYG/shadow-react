@@ -38,6 +38,13 @@ module.exports = {
         },
       },
       {
+        test: /\.(ts|tsx)$/,
+        // exclude: /node_modules\/(?!shadow-react-dom\/).*/,
+        use: {
+          loader: 'ts-loader',
+        },
+      },
+      {
         test: /\.css|scss$/,
         use: [
           {

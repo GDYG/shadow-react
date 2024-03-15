@@ -1,6 +1,6 @@
 {
 	"module": {
-		"type": "umd",
+		"type": "es6",
 		"resolveFully": true
 	},
 	"jsc": {
@@ -21,7 +21,7 @@
 		},
 		"target": "es5",
 		"loose": false,
-		"keepClassNames": false,
+		"keepClassNames": false
 		// "minify": { // 压缩相关
     //   "compress": true, // 对应 terser 的压缩选项
     //   "mangle": true // 对应 terser 的处理选项

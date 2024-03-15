@@ -1,6 +1,6 @@
 {
   "name": "shadow-react-dom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/cjs/index.cjs.js",
   "module": "dist/esm/index.esm.js",
   "browser": "dist/umd/index.min.js",
@@ -64,6 +64,7 @@
     "shadow-react-dom": "^1.0.1",
     "swc-loader": "^0.2.6",
     "tailwindcss": "^3.4.1",
+    "ts-loader": "^9.5.1",
     "typescript": "^5.4.2",
     "webpack": "^5.90.3",
     "webpack-build-notifier": "^2.3.0",
